@@ -8,16 +8,32 @@
 </head>
 <body>
     <form action="" method="get">
-        <input type="text" name="nome" id="nome"><br>
+        <label for="nome">Nome Completo</label>
+        <input type="text" required class="campo" name="nome" id="nome" placeholder="digite seu nome" value=""><br>
         <input type="color" name="corFavorita" id="corFavorita"><br>
         <input type="date" name="" id=""><br>
         <input type="time" name="" id="">
         <select name="" id="">
-            <option value="">opção1</option>
-            <option value="">opção2</option>
-            <option value="">opção3</option>
-            <option value="">opção4</option>
+            <option value="opção1">opção1</option>
+            <option value="opção2">opção2</option>
+            <option value="opção3">opção3</option>
+            <option value="opção4">opção4</option>
         </select>
+        <ul id="ul1">
+            <li><label for="turno">Escolha o turno</label></li>
+            <li><input type="radio" name="turno" id="" value="Manhã">Manhã</li>
+            <li><input type="radio" name="turno" id="" value="Tarde">Tarde</li>
+            <li><input type="radio" name="turno" id="" value="Noite">Noite</li>
+        </ul>
+        <ul>
+            <li><input type="checkbox" name="comida[]" id="" value="Pizza">Pizza</li>
+            <li><input type="checkbox" name="comida[]" id="" value="Sushi">Sushi</li>
+            <li><input type="checkbox" name="comida[]" id="" value="Hamburguer">Hamburguer</li>
+        </ul>
+        <textarea name="descrição" id=""></textarea>
+        <input type="submit" value="Cadastrar">
+        <input type="button" value="">
+        <input type="reset" value="Limpar">
     </form>
     <script src="./script.js"></script>
 </body>
