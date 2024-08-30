@@ -7,29 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form class="formulario" action="">
         <fieldset>
             <legend>Cadastro de Pessoas</legend>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome">
-            </div>
-            <div>
-                <label for="e-mail">E-mail:</label>
-                <input type="text" name="e-mail" id="e-mail">
-            </div>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="text" name="senha" id="senha">
-            </div>
-            <div>
-                <label for="data">Data Nascimento:</label>
-                <input type="date" name="data" id="data">
-            </div>
+            <h1>Cadastro</h1>
+            <div class="parteInfos">
+                <div class="infos">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="infos">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+                <div class="infos">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="text" name="e-mail" id="e-mail">
+                </div>
+                <div class="infos">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <div class="infos">
+                    <label for="data">Data Nascimento:</label>
+                    <input type="date" name="data" id="data">
+                </div>
+            </div>    
             <div>
                 <label for="comida">Comida Favorita:</label>
                 <ul>
@@ -40,7 +43,7 @@
                     <li><input type="checkbox" name="comida" id="comida[]" value="xis">Xis</li>
                 </ul>
             </div>
-            <div>
+            <div class="textarea">
                 <label for="texto">Descreva suas características:</label>
                 <textarea name="texto" id="texto"></textarea>
             </div>
@@ -51,7 +54,7 @@
                     <li><input type="radio" name="radio" id="radio" value="não">Não</li>
                 </ul>
             </div>
-            <div>
+            <div class="submit">
                 <input type="submit" name="mandar" id="mandar" value="Cadastrar">
             </div>
         </fieldset>
